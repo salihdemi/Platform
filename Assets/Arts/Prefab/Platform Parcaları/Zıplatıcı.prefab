@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8037916431543378875}
   - component: {fileID: 8037916431543378874}
   m_Layer: 0
-  m_Name: Kup
+  m_Name: "Z\u0131plat\u0131c\u0131"
   m_TagString: Ziplatan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
