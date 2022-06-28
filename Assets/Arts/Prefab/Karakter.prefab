@@ -126,6 +126,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -302,9 +303,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ayarlarPanel: {fileID: 1733482739506476282}
-  yerCekimi: 10
-  hiz: 15
-  ziplama: 20
+  yerCekimi: 20
+  hiz: 30
+  ziplama: 50
   sld: {fileID: 2802438076704937838}
   cam: {fileID: 2539010025333008443}
   rb: {fileID: 2539010025321819339}
@@ -413,6 +414,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 2539010025186346603}
     m_Modifications:
     - target: {fileID: 6115836358829532880, guid: 811f39ea32c39554c81781ad7f329017, type: 3}
@@ -464,6 +466,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 811f39ea32c39554c81781ad7f329017, type: 3}
 --- !u!4 &6380837151657254427 stripped
 Transform:
@@ -475,6 +478,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 2539010025186346603}
     m_Modifications:
     - target: {fileID: 421124769906679665, guid: 589b02cd90dc2074ba0401e7357c1f0b, type: 3}
@@ -591,6 +595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9180018353281427577, guid: 589b02cd90dc2074ba0401e7357c1f0b, type: 3}
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 589b02cd90dc2074ba0401e7357c1f0b, type: 3}
 --- !u!1 &1733482739506476282 stripped
 GameObject:

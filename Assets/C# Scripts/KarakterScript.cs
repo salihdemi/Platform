@@ -69,7 +69,7 @@ public class KarakterScript : MonoBehaviour
         //ZIPLAMA
         if (yerde && Input.GetKeyDown(KeyCode.Space))
         {
-            rb.AddForce(Vector3.up * ziplama * Time.deltaTime * 100, ForceMode.Impulse);
+            Zipla(ziplama);
         }
 
     }
@@ -77,13 +77,18 @@ public class KarakterScript : MonoBehaviour
     {
         yerCekimiK = 0;
         yerde = true;
-        if (collision.transform.tag == "Hareketli")
+
+        switch (collision.transform.tag)
         {
-            transform.SetParent(collision.transform);
-        }
-        if (collision.transform.tag == "Finish")
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            case "Hareketli":
+                transform.SetParent(collision.transform);
+                return;
+            case "Finish":
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                return;
+            case "Ziplatan":
+                Zipla(5);
+                return;
         }
     }
     private void OnCollisionExit(Collision collision)
@@ -94,6 +99,10 @@ public class KarakterScript : MonoBehaviour
         {
             transform.parent.DetachChildren();
         }
+    }
+    private void Zipla(float carpan)
+    {
+            rb.AddForce(Vector3.up * carpan * Time.deltaTime * 100, ForceMode.Impulse);
     }
     public void HassasiyetDegisim()
     {
