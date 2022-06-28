@@ -208,7 +208,7 @@ Transform:
   - {fileID: 2539010025186346603}
   - {fileID: 2539010024127503570}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2539010025321819343
 MeshFilter:
@@ -304,8 +304,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ayarlarPanel: {fileID: 1733482739506476282}
   yerCekimi: 20
-  hiz: 30
-  ziplama: 50
+  hiz: 60
+  ziplama: 40
   sld: {fileID: 2802438076704937838}
   cam: {fileID: 2539010025333008443}
   rb: {fileID: 2539010025321819339}
